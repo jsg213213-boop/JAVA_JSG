@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class _2_Point {
  public static void main(String[] args) {
-     int number = 100;
      Scanner scanner = new Scanner(System.in);
      System.out.println(("반지름 입력: "));
      double radius = scanner.nextDouble();
