@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class _3_ex { // 파일명과 일치하는 클래스 하나만 유지
+public class _3_ex {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
