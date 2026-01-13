@@ -1,10 +1,24 @@
-public class _3_ex {
+import java.util.Scanner;
+public class _3_ex { // 파일명과 일치하는 클래스 하나만 유지
     public static void main(String[] args) {
-        // 2) 두 수를 곱한 결과 출력
-        int x = 100;
-        int y = 200;
-        int result = x * y;
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("x와 y를 곱한 결과 : " + result);
+        System.out.print("나이 입력: ");
+        int age = scanner.nextInt();
+
+        boolean isAdult = age >= 19;
+        System.out.println("성인입니까? " + isAdult);
+
+        System.out.println("-------------------------");
+
+
+        System.out.print("점수 입력: ");
+        int score = scanner.nextInt();
+
+        String result = (score >= 60) ? "합격" : "불합격";
+        System.out.println(result + " 입니다.");
+
+
+        scanner.close();
     }
 }
