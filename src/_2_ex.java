@@ -26,7 +26,7 @@ public class _2_ex {
         int num2 = scanner.nextInt();
 
         int sum = num1 + num2;
-        // 평균을 소수점까지 정확히 구하기 위해 2.0(double)으로 나누어줍니다.
+
         double avg = sum / 2.0;
 
         System.out.println("출력 : 합: [" + sum + "] , 평균 [" + avg + "]");
@@ -35,7 +35,7 @@ public class _2_ex {
 
         System.out.println("3) 성별 입력 받기");
         System.out.print("성별(M/F) : ");
-        // Scanner에는 nextChar()가 없으므로 문자열을 받고 0번째 글자를 가져옵니다.
+
         char gender = scanner.next().charAt(0);
 
         System.out.println("출력 : 입력한 성별은: " + gender);
