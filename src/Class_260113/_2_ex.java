@@ -1,3 +1,5 @@
+package Class_260113;
+
 import java.util.Scanner;
 public class _2_ex {
     public static void main(String[] args) {
