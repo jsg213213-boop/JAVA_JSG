@@ -14,4 +14,5 @@ public class _2_Point {
         System.out.println("당신의 이름은 : " +name + "입니다.~~");
         scanner.close();
     }
+
 }
