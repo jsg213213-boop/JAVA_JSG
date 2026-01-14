@@ -41,7 +41,7 @@ public class _3_ex {
         String[] array = {"apple", "banana", "kiwi"};
 
         String result = getLongest(array);
-        System.out.println("실습 3-3 : 가장 긴 문자열은? " + result);
+        System.out.println("가장 긴 문자열은? " + result);
 
     }
 
