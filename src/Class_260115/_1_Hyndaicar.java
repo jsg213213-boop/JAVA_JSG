@@ -23,7 +23,7 @@ class Car {
     class _1_Hyundaicar {
         public static void main(String[] args) {
             // Car 객체 생성
-            Car car1 = new Car("스타리아", 2026, "MPV(다목적 차량)");
+            Car car1 = new Car("스타리아", 2026, "승합차");
             Car car2 = new Car("코나", 2026, "소형 SUV");
             Car car3 = new Car("팰리세이드", 2026, "대형 SUV");
             Car car4 = new Car("투싼", 2026, "준중형 SUV");
