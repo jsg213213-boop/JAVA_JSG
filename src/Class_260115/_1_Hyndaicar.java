@@ -28,8 +28,8 @@ class Car {
             Car car03 = new Car("팰리세이드", 2026, "대형 SUV");
             Car car04 = new Car("투싼", 2026, "준중형 SUV");
             Car car05 = new Car("싼타페", 2026, "중형 SUV");
-            Car car06 = new Car("아이오닉5", 2026, "준중형 SUV (전기차)");
-            Car car07 = new Car("아이오닉6", 2026, "중형 세단 (전기차)");
+            Car car06 = new Car("아이오닉5", 2026, "준중형 SUV(전기차)");
+            Car car07 = new Car("아이오닉6", 2026, "중형 세단(전기차)");
             Car car08 = new Car("제네시스G80", 2026, "대형 세단");
             Car car09 = new Car("베뉴", 2026, "소형 SUV");
             Car car10 = new Car("캐스퍼", 2026, "경형 SUV");
