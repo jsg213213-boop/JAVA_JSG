@@ -6,9 +6,6 @@ public class Starbucks {
     String size;
     boolean isHot;
 
-    public Starbucks(String menuName) {
-        this(menuName, "Tall", true);
-    }
 
     public Starbucks(String menuName, String size) {
         this(menuName, size, true);
@@ -31,9 +28,9 @@ public class Starbucks {
 
     public static void main(String[] args) {
 
-        Starbucks order1 = new Starbucks("아메리카노");
-        Starbucks order2 = new Starbucks("카페 라떼", "그란데");
-        Starbucks order3 = new Starbucks("초코 라떼", "벤티", false);
+        Starbucks order1 = new Starbucks("아메리카노", "벤티", false);
+        Starbucks order2 = new Starbucks("카페라떼", "벤티");
+        Starbucks order3 = new Starbucks("초코라떼", "벤티", true);
 
 
         order1.showMenu();
