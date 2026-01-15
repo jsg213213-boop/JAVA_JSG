@@ -18,7 +18,7 @@ public class Starbucks {
     }
 
     public void showMenu() {
-        System.out.println("----- Starbucks 주문 내역 -----");
+        System.out.println("----- Starbucks 음료 주문 내역 -----");
         System.out.println("메뉴 이름 : " + menuName);
         System.out.println("사이즈    : " + size);
         System.out.println("Hot 여부  : " + (isHot ? "Hot" : "Ice"));
