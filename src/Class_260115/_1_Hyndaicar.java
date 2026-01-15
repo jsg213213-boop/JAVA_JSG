@@ -20,7 +20,6 @@ class Car {
         }
     }
 
-    // 파일명과 동일하거나 중복되지 않는 클래스 이름을 사용합니다.
     class _1_Hyundaicar {
         public static void main(String[] args) {
             // Car 객체 생성
