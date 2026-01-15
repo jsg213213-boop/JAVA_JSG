@@ -21,7 +21,7 @@ public class Starbucks {
         System.out.println("----- Starbucks 주문 내역 -----");
         System.out.println("메뉴 이름 : " + menuName);
         System.out.println("사이즈    : " + size);
-        System.out.println("Hot 여부  : " + (isHot ? "Hot" : "Ice")); // true면 Hot, false면 Ice 출력
+        System.out.println("Hot 여부  : " + (isHot ? "Hot" : "Ice"));
         System.out.println("------------------------------");
         System.out.println();
     }
