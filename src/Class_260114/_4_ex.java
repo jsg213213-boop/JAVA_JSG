@@ -11,7 +11,7 @@ public class _4_ex {
         for (int i = 0; i < numbers.length; i++) {
             System.out.print((i + 1) + "번째 정수를 입력하세요: ");
             numbers[i] = sc.nextInt();
-            sum += numbers[i]; // 입력받으면서 바로 합계에 더함
+            sum += numbers[i];
         }
 
         double average = (double) sum / numbers.length;
@@ -37,7 +37,7 @@ public class _4_ex {
 
 
         System.out.println("배열에서 최대값 찾기");
-        int[] sampleArray = {100, 200, 300, 50, 450, 120}; // 테스트용 샘플 배열
+        int[] sampleArray = {100, 200, 300, 50, 450, 120};
 
         int max = getMaxValue(sampleArray);
         System.out.println("샘플 배열: {100, 200, 300, 50, 450, 120}");
@@ -46,11 +46,11 @@ public class _4_ex {
 
     // 최대값을 찾아 반환하는 메서드
     public static int getMaxValue(int[] arr) {
-        int maxVal = arr[0]; // 첫 번째 값을 기준값으로 설정
+        int maxVal = arr[0];
 
         for (int num : arr) {
             if (num > maxVal) {
-                maxVal = num; // 현재 숫자가 더 크면 기준값 교체
+                maxVal = num;
             }
         }
         return maxVal;
