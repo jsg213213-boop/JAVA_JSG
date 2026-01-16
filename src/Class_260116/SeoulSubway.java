@@ -8,7 +8,6 @@ class Subway {
     String inverter;
     String trainRange;
 
-
     public Subway(String lineName, String lineColor, String operator, String models, String inverter, String trainRange) {
         this.lineName = lineName;
         this.lineColor = lineColor;
@@ -17,7 +16,6 @@ class Subway {
         this.inverter = inverter;
         this.trainRange = trainRange;
     }
-
 
     public void introduceSubway() {
         System.out.println("--- " + lineName + " 구동음 및 소자 상세 소개 ---");
