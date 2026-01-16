@@ -1,18 +1,18 @@
 package Class_260116;
 
 class Employee {
-    protected String department; // 자식 클래스에게 접근 허용
+    protected String department;
 
-    // 매개변수가 1개인 생성자
+
     public Employee(String department) {
         this.department = department;
     }
 }
 
-// 2. 자식 클래스: Manager
-class Manager extends Employee { // 부모 클래스 상속
 
-    // 자식 생성자: 매개변수 1개
+class Manager extends Employee {
+
+
     public Manager(String department) {
         // [주의] 부모 클래스 생성자를 반드시 먼저 호출해야 함
         super(department);
@@ -24,7 +24,7 @@ class Manager extends Employee { // 부모 클래스 상속
     }
 }
 
-// 3. 메인 클래스
+
 class Main {
     public static void main(String[] args) {
         // Manager 객체 2개 생성
