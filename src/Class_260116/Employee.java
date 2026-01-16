@@ -2,28 +2,18 @@ package Class_260116;
 
 class Employee {
     protected String department;
-
-
     public Employee(String department) {
         this.department = department;
     }
 }
-
-
 class Manager extends Employee {
-
-
     public Manager(String department) {
-        // [주의] 부모 클래스 생성자를 반드시 먼저 호출해야 함
         super(department);
     }
-
-    // 메서드: 부모의 protected 필드를 상속받아 출력
     public void printDept() {
         System.out.println("소속 부서 : " + this.department);
     }
 }
-
 
 class Main {
     public static void main(String[] args) {
