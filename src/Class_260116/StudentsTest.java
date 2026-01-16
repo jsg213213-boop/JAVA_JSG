@@ -4,7 +4,6 @@ class StudentEx1 {
     String name;
     int score;
 
-
     public StudentEx1(String name, int score) {
         this.name = name;
         this.score = score;
@@ -25,8 +24,7 @@ public class StudentsTest {
         }
     }
 
-
-    public static StudentEx1[] createStudents() {
+    static StudentEx1[] createStudents() {
         StudentEx1 s1 = new StudentEx1("김철수", 95);
         StudentEx1 s2 = new StudentEx1("이영희", 85);
         StudentEx1 s3 = new StudentEx1("박지성", 92);

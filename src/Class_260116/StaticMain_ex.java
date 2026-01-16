@@ -2,7 +2,6 @@ package Class_260116;
 
 public class StaticMain_ex {
     public static void main(String[] args) {
-
         Static_ex sample1 =
                 new Static_ex();
         sample1.number = 100;
