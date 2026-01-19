@@ -2,14 +2,14 @@ package Class_260119;
 
 abstract class Machine {
 
-    // 일반 메서드: 공통 기능 제공 가능
+
     void powerOn() {
         System.out.println("전원을 켭니다.");
     }
 }
 
 class Printer extends Machine {
-    // 추상 메서드 오버라이딩 (구현)
+
     void operate() {
         System.out.println("프린터가 문서를 출력합니다.");
     }
