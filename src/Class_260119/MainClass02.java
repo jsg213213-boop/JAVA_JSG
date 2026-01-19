@@ -3,27 +3,6 @@ package Class_260119;
 import java.util.Scanner;
 
 
-class NormalMember02 extends MemberBase implements Joinable {
-
-    public NormalMember02(String name, String email, String password, int age) {
-        super(name, email, password, age);
-    }
-
-    public void join02() {
-        System.out.println("✅ " + name + "님 회원가입 완료.");
-    }
-
-    @Override
-    public void showInfo() {
-        System.out.println("[이름: " + name + " | 이메일: " + email + " | 나이: " + age + "]");
-    }
-
-    @Override
-    public void join() {
-
-    }
-}
-
 // 4) 메인 클래스
 public class MainClass02 {
     public static void main(String[] args) {
