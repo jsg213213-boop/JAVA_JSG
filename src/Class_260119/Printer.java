@@ -17,9 +17,7 @@ class Printer extends Machine {
 
 class Main_Point {
     public static void main(String[] args) {
-        // Machine m = new Machine(); // 에러: 추상 클래스는 인스턴스화할 수 없음
 
-        // 자식 클래스 객체 생성
         Printer myPrinter = new Printer();
 
         myPrinter.powerOn();  // 부모로부터 물려받은 메서드
