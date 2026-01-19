@@ -78,14 +78,13 @@ public class MainClass {
                     System.out.print("나이: ");
                     int age = Integer.parseInt(sc.nextLine());
 
-                    // 정상적으로 생성된 변수를 전달
                     NormalMember newMember = new NormalMember(name, email, password, age);
                     members[count] = newMember;
                     newMember.join();
                     count++;
                     break;
 
-                case 2: // 목록 조회
+                case 2:
                     System.out.println("\n--- 전체 회원 목록 ---");
                     if(count == 0) System.out.println("가입된 회원이 없습니다.");
                     for(int i=0; i<count; i++) {
@@ -93,7 +92,7 @@ public class MainClass {
                     }
                     break;
 
-                case 3: // 로그인 기능
+                case 3:
                     System.out.println("\n--- 로그인 ---");
                     System.out.print("이메일: ");
                     String inputEmail = sc.nextLine();
@@ -115,7 +114,7 @@ public class MainClass {
                     }
                     break;
 
-                case 4: // 종료
+                case 4:
                     System.out.println("프로그램을 종료합니다.");
                     sc.close();
                     return;
