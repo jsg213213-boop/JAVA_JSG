@@ -2,8 +2,6 @@ package Class_260119;
 
 import java.util.Scanner;
 
-
-// 4) 메인 클래스
 public class MainClass02 {
     public static void main(String[] args) {
         MemberBase[] members = new MemberBase[5];
