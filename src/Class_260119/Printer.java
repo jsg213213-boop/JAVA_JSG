@@ -20,7 +20,7 @@ class Main_Point {
 
         Printer myPrinter = new Printer();
 
-        myPrinter.powerOn();  // 부모로부터 물려받은 메서드
-        myPrinter.operate();  // 직접 구현한 메서드
+        myPrinter.powerOn();
+        myPrinter.operate();
     }
 }
