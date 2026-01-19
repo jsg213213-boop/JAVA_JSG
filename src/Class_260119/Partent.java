@@ -8,7 +8,7 @@ class Parent {
 
 class Child extends Parent {
     Child() {
-        // 사실 이곳에는 super(); 가 생략되어 있습니다.
+
         System.out.println("자식 생성자 호출");
     }
 }
