@@ -7,16 +7,11 @@ class Parent {
 }
 
 class Child extends Parent {
-    Child() {
-
-        System.out.println("자식 생성자 호출");
-    }
 }
 
 class Main {
     public static void main(String[] args) {
         System.out.println("--- 객체 생성 시작 ---");
-        Child child = new Child();
         System.out.println("--- 객체 생성 완료 ---");
     }
 }
