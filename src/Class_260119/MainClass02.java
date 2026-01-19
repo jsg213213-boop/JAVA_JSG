@@ -2,7 +2,7 @@ package Class_260119;
 
 import java.util.Scanner;
 
-// 3) 실제 기능을 구현하는 일반 회원 클래스
+
 class NormalMember02 extends MemberBase implements Joinable {
 
     public NormalMember02(String name, String email, String password, int age) {
@@ -40,7 +40,7 @@ public class MainClass02 {
             try {
                 choice = Integer.parseInt(sc.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("⚠️ 숫자만 입력해주세요.");
+                System.out.println("⚠️ 숫자로 입력해주세요.");
                 continue;
             }
 

@@ -56,7 +56,7 @@ public class MainClass {
 
         while (true) {
             System.out.println("\n============= 회원 관리 시스템 ver 1.1 =============");
-            System.out.println("1. 회원가입  2. 목록조회  3. 로그인  4. 종료");
+            System.out.println("1. 회원가입  2. 목록조회  3. 종료");
             System.out.print("메뉴 선택 >> ");
 
             int choice;
