@@ -22,7 +22,7 @@ public class MainClass02 {
             }
 
             switch (choice) {
-                case 1: // 회원 가입
+                case 1:
                     if (count >= members.length) {
                         System.out.println("❌ 정원 초과입니다.");
                         break;
@@ -42,7 +42,7 @@ public class MainClass02 {
                     count++;
                     break;
 
-                case 2: // 목록 조회
+                case 2:
                     System.out.println("\n--- 전체 회원 목록 ---");
                     if (count == 0) System.out.println("등록된 회원이 없습니다.");
                     for (int i = 0; i < count; i++) {
@@ -50,7 +50,7 @@ public class MainClass02 {
                     }
                     break;
 
-                case 3: // 로그인 기능
+                case 3:
                     System.out.println("\n--- 로그인 ---");
                     System.out.print("이메일 입력: ");
                     String inputEmail = sc.nextLine();
@@ -73,7 +73,7 @@ public class MainClass02 {
                     }
                     break;
 
-                case 4: // 종료
+                case 4:
                     System.out.println("프로그램을 종료합니다.");
                     sc.close();
                     return;
