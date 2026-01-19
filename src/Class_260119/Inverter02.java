@@ -24,6 +24,6 @@ public class Inverter02 {
         myPhone.makeCall();
 
         myPhone.takePhoto(); // 가능
-        // 불가능 (Camera 인터페이스에는 makeCall이 없음)
+
     }
 }
