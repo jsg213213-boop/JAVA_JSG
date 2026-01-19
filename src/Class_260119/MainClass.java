@@ -1,13 +1,11 @@
 package Class_260119;
 import java.util.Scanner;
 
-// 1) 회원 가입 기능 인터페이스
 interface Joinable {
     void join();
-    // 만약 인터페이스에 join02()가 있다면 반드시 구현해야 에러가 나지 않습니다.
+
 }
 
-// 2) 회원의 공통 정보를 담는 추상 클래스
 abstract class MemberBase {
     protected String name;
     protected String email;
@@ -23,15 +21,14 @@ abstract class MemberBase {
 
     public abstract void showInfo();
 
-    // 로그인 체크를 위해 실제 필드값을 반환하도록 수정
+
     public String getEmail() { return email; }
     public String getPassword() { return password; }
 }
 
-// 3) 실제 기능을 구현하는 일반 회원 클래스
 class NormalMember extends MemberBase implements Joinable {
 
-    // 오류 해결: 매개변수 이름을 password로 통일하여 super() 호출 시 에러 방지
+
     public NormalMember(String name, String email, String password, int age) {
         super(name, email, password, age);
     }
@@ -47,7 +44,6 @@ class NormalMember extends MemberBase implements Joinable {
     }
 }
 
-// 4) 메인 클래스
 public class MainClass {
     public static void main(String[] args) {
         MemberBase[] members = new MemberBase[5];
