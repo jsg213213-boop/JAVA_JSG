@@ -1,10 +1,9 @@
 package Class_260120;
 import java.util.Scanner;
-// 1) 회원 가입 기능 인터페이스
+
 interface Joinable {
 }
 
-// 2) 회원의 공통 정보를 담는 추상 클래스
 abstract class MemberBase {
     protected String name;
     protected String email;
@@ -20,7 +19,6 @@ abstract class MemberBase {
 
     public abstract void showInfo();
 
-    // 로그인 정보 확인을 위한 Getter
     public String getEmail() { return email; }
     public String getPassword() { return password; }
 
@@ -33,9 +31,7 @@ abstract class MemberBase {
 
 }
 
-// 3) 실제 구현 클래스
 class NormalMember extends MemberBase implements Joinable {
-    // 생성자 매개변수 이름을 일치시켜 오류 방지
     public NormalMember(String name, String email, String password, int age) {
         super(name, email, password, age);
     }
@@ -50,13 +46,11 @@ class NormalMember extends MemberBase implements Joinable {
     }
 }
 
-// 4) 메인 클래스 (실습 2 기능 포함)
 public class MainClass03 {
     public static void main(String[] args) {
         MemberBase[] members = new MemberBase[5];
         int count = 0;
 
-        // [실습 2] 로그인한 유저 정보를 담을 변수 (null이면 로그인 안 된 상태)
         MemberBase loginUser = null;
 
         Scanner sc = new Scanner(System.in);
@@ -64,7 +58,6 @@ public class MainClass03 {
         while (true) {
             System.out.println("\n============= 회원 관리 시스템 ver 1.2 =============");
 
-            // [실습 2] 로그인 정보 메뉴 상단 표시 기능
             if (loginUser != null) {
                 System.out.println("👤 로그인한 유저 : " + loginUser.getEmail());
             } else {
@@ -83,7 +76,7 @@ public class MainClass03 {
             }
 
             switch(choice) {
-                case 1: // 회원 가입
+                case 1:
                     if(count >= members.length) {
                         System.out.println("❌ 정원초과입니다.");
                         break;
@@ -98,7 +91,7 @@ public class MainClass03 {
                     newMember.join();
                     break;
 
-                case 2: // 목록 조회
+                case 2:
                     System.out.println("\n--- 전체 회원 목록 ---");
                     if(count == 0) System.out.println("가입된 회원이 없습니다.");
                     for(int i=0; i<count; i++) {
@@ -106,7 +99,7 @@ public class MainClass03 {
                     }
                     break;
 
-                case 3: // 로그인 기능
+                case 3:
                     System.out.print("이메일: "); String inputEmail = sc.nextLine();
                     System.out.print("비밀번호: "); String inputPw = sc.nextLine();
 
@@ -123,7 +116,7 @@ public class MainClass03 {
                     if(!isSuccess) System.out.println("❌ 정보가 불일치해서 로그인 안됩니다.");
                     break;
 
-                case 4: // 로그아웃 추가
+                case 4:
                     if(loginUser != null) {
                         System.out.println("👋 " + loginUser.name + "님 로그아웃 되었습니다.");
                         loginUser = null;
@@ -132,7 +125,7 @@ public class MainClass03 {
                     }
                     break;
 
-                case 5: // 종료
+                case 5:
                     System.out.println("프로그램을 종료합니다.");
                     sc.close();
                     return;
