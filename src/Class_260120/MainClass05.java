@@ -80,7 +80,7 @@ public class MainClass05 {
                     } else {
                         System.out.println("\n 총회원수 : " + count + "명입니다.");
                         for (int i = 0; i < count; i++) {
-                            members[i].showInfo(); // 다형성 (오버라이딩된 메서드 실행)
+                            members[i].showInfo();
                         }
                     }
                     break;
