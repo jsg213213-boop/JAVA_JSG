@@ -28,8 +28,7 @@ abstract class MemberBase {
     }
 
     public String getAge() {
-        String s = String.valueOf(age);
-        return s;
+        return String.valueOf(age);
     }
 
 }
