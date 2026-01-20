@@ -1,6 +1,5 @@
 package Class_260120;
 
-
 import java.io.*;
 import java.util.Scanner;
 
