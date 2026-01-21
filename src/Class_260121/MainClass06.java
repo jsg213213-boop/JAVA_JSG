@@ -98,8 +98,6 @@ class MemberBase {
     protected String password;
     protected int age;
 
-    public MemberBase() {}
-
     public MemberBase(String name, String email, String password, int age) {
         this.name = name;
         this.email = email;
