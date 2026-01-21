@@ -5,10 +5,9 @@ public class MainClass07 {
     private static final String FILE_NAME = "members.txt";
 
     public static void main(String[] args) {
-        // 배열 대신 Map 사용 (Key: 이메일, Value: 회원객체)
+
         Map<String, MemberBase> members = new HashMap<>();
 
-        // 파일 데이터 로드
         loadMembers(members);
 
         MemberBase loggedInMember = null;
@@ -35,7 +34,7 @@ public class MainClass07 {
             }
 
             switch (choice) {
-                case 1: // 회원가입
+                case 1:
                     System.out.print("이름: ");
                     String name = sc.nextLine();
                     System.out.print("이메일: ");
@@ -45,7 +44,7 @@ public class MainClass07 {
                     System.out.print("나이: ");
                     int age = Integer.parseInt(sc.nextLine());
 
-                    // 중복 체크
+
                     if (members.containsKey(email)) {
                         System.out.println("이미 존재하는 이메일입니다.");
                     } else {
@@ -56,7 +55,7 @@ public class MainClass07 {
                     }
                     break;
 
-                case 2: // 목록조회
+                case 2:
                     if (members.isEmpty()) {
                         System.out.println("가입된 회원이 없습니다. ");
                     } else {
@@ -67,7 +66,7 @@ public class MainClass07 {
                     }
                     break;
 
-                case 3: // 로그인
+                case 3:
                     System.out.println("\n====로그인===== ");
                     System.out.print("이메일 : ");
                     String inputEmail = sc.nextLine();
@@ -85,12 +84,12 @@ public class MainClass07 {
                     }
                     break;
 
-                case 4: // 로그아웃
+                case 4:
                     loggedInMember = null;
                     System.out.println("로그아웃 되었습니다.");
                     break;
 
-                case 5: // 종료
+                case 5:
                     System.out.println("프로그램을 종료합니다. ");
                     sc.close();
                     return;
@@ -101,7 +100,6 @@ public class MainClass07 {
         }
     }
 
-    // 파일 저장 로직 (Map 기반)
     public static void saveMembers(Map<String, MemberBase> members){
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE_NAME))) {
             for(MemberBase m : members.values()) {
