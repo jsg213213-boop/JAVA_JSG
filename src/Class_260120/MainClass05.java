@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class MainClass05 {
 
-
     private static final String FILE_NAME = "members.txt";
 
     public static void main(String[] args) {
