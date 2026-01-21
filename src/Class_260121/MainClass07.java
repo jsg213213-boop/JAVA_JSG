@@ -115,7 +115,6 @@ public class MainClass07 {
         }
     }
 
-    // 파일 로드 로직 (Map 기반)
     public static void loadMembers(Map<String, MemberBase> members){
         File file = new File(FILE_NAME);
         if(!file.exists()) return;

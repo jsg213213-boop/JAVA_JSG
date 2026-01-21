@@ -143,4 +143,3 @@ public class MainClass08 {
         return loadCount;
     }
 }
-
