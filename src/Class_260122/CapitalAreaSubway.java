@@ -96,7 +96,7 @@ public class CapitalAreaSubway {
                         "IGBT", "D01~D23편성"),
 
                 new Subway("수인분당선", "노란색", "코레일", "뱀눈이, 동글이, 납작이",
-                        "IGBT", "351x01~351x79편성"),
+                        "GTO & IGBT", "351x01~351x79편성"),
 
                 new Subway("서해선", "연두색", "서해철도/코레일", "뱀눈이 다원시스",
                         "IGBT", "391x01~391x17편성"),
